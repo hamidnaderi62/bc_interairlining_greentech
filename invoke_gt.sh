@@ -111,6 +111,39 @@ CHAINCODE_NAME=interairlining
 #     --tlsRootCertFiles $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
 #     --peerAddresses $CORE_PEER0_ORG2_ADDRESS \
 #     --tlsRootCertFiles $CORE_PEER_ORG2_TLS_ROOTCERT_FILE \
+#     -c '{"function":"createAirline","Args":["al_002" , "AL2" , "QATAR"]}'
+
+    # peer chaincode invoke \
+    # -C $CHANNEL_NAME \
+    # -n $CHAINCODE_NAME \
+    # -o $CORE_ORDERER_ADDRESS \
+    # --tls true --cafile $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+    # --peerAddresses $CORE_PEER0_ORG1_ADDRESS \
+    # --tlsRootCertFiles $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+    # --peerAddresses $CORE_PEER0_ORG2_ADDRESS \
+    # --tlsRootCertFiles $CORE_PEER_ORG2_TLS_ROOTCERT_FILE \
+    # -c '{"function":"createAirline","Args":["al_003" , "AL3" , "TURKEY"]}'
+
+# peer chaincode invoke \
+#     -C $CHANNEL_NAME \
+#     -n $CHAINCODE_NAME \
+#     -o $CORE_ORDERER_ADDRESS \
+#     --tls true --cafile $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+#     --peerAddresses $CORE_PEER0_ORG1_ADDRESS \
+#     --tlsRootCertFiles $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+#     --peerAddresses $CORE_PEER0_ORG2_ADDRESS \
+#     --tlsRootCertFiles $CORE_PEER_ORG2_TLS_ROOTCERT_FILE \
+#     -c '{"function":"createAirline","Args":["al_004" , "AL4" , "FRANCE"]}'
+    
+# peer chaincode invoke \
+#     -C $CHANNEL_NAME \
+#     -n $CHAINCODE_NAME \
+#     -o $CORE_ORDERER_ADDRESS \
+#     --tls true --cafile $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+#     --peerAddresses $CORE_PEER0_ORG1_ADDRESS \
+#     --tlsRootCertFiles $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+#     --peerAddresses $CORE_PEER0_ORG2_ADDRESS \
+#     --tlsRootCertFiles $CORE_PEER_ORG2_TLS_ROOTCERT_FILE \
 # -c '{"function":"updateAirlineCountry","Args":["al_003" , "Turkey"]}'
 
 # peer chaincode invoke \
@@ -158,6 +191,39 @@ CHAINCODE_NAME=interairlining
 #     --tlsRootCertFiles $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
 #     --peerAddresses $CORE_PEER0_ORG2_ADDRESS \
 #     --tlsRootCertFiles $CORE_PEER_ORG2_TLS_ROOTCERT_FILE \
+#     -c '{"function":"createAirport","Args":["ap_002" , "AP2" , "QATAR-Duha"]}'
+
+# peer chaincode invoke \
+#     -C $CHANNEL_NAME \
+#     -n $CHAINCODE_NAME \
+#     -o $CORE_ORDERER_ADDRESS \
+#     --tls true --cafile $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+#     --peerAddresses $CORE_PEER0_ORG1_ADDRESS \
+#     --tlsRootCertFiles $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+#     --peerAddresses $CORE_PEER0_ORG2_ADDRESS \
+#     --tlsRootCertFiles $CORE_PEER_ORG2_TLS_ROOTCERT_FILE \
+#     -c '{"function":"createAirport","Args":["ap_003" , "AP3" , "TURKEY-Istanbul"]}'
+
+# peer chaincode invoke \
+#     -C $CHANNEL_NAME \
+#     -n $CHAINCODE_NAME \
+#     -o $CORE_ORDERER_ADDRESS \
+#     --tls true --cafile $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+#     --peerAddresses $CORE_PEER0_ORG1_ADDRESS \
+#     --tlsRootCertFiles $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+#     --peerAddresses $CORE_PEER0_ORG2_ADDRESS \
+#     --tlsRootCertFiles $CORE_PEER_ORG2_TLS_ROOTCERT_FILE \
+#     -c '{"function":"createAirport","Args":["ap_004" , "AP4" , "FRANCE-Paris"]}'
+
+# peer chaincode invoke \
+#     -C $CHANNEL_NAME \
+#     -n $CHAINCODE_NAME \
+#     -o $CORE_ORDERER_ADDRESS \
+#     --tls true --cafile $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+#     --peerAddresses $CORE_PEER0_ORG1_ADDRESS \
+#     --tlsRootCertFiles $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+#     --peerAddresses $CORE_PEER0_ORG2_ADDRESS \
+#     --tlsRootCertFiles $CORE_PEER_ORG2_TLS_ROOTCERT_FILE \
 # -c '{"function":"updateAirportLocation","Args":["ap_001" , "IRAN-Tabriz"]}'
 
 # peer chaincode invoke \
@@ -195,7 +261,7 @@ CHAINCODE_NAME=interairlining
 #     --tlsRootCertFiles $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
 #     --peerAddresses $CORE_PEER0_ORG2_ADDRESS \
 #     --tlsRootCertFiles $CORE_PEER_ORG2_TLS_ROOTCERT_FILE \
-#     -c '{"function":"createOrder","Args":["ord_001" , "bag_001" , "ap_001" , "ap_003" ]}'
+#     -c '{"function":"createOrder","Args":["ord_002" , "bag_002" , "ap_001" , "ap_004" ]}'
 
 # peer chaincode invoke \
 #     -C $CHANNEL_NAME \
@@ -222,16 +288,38 @@ CHAINCODE_NAME=interairlining
 ##############################
 # ######## Transport
 ##############################
-# peer chaincode invoke \
-#     -C $CHANNEL_NAME \
-#     -n $CHAINCODE_NAME \
-#     -o $CORE_ORDERER_ADDRESS \
-#     --tls true --cafile $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
-#     --peerAddresses $CORE_PEER0_ORG1_ADDRESS \
-#     --tlsRootCertFiles $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
-#     --peerAddresses $CORE_PEER0_ORG2_ADDRESS \
-#     --tlsRootCertFiles $CORE_PEER_ORG2_TLS_ROOTCERT_FILE \
-#     -c '{"function":"createTransport","Args":["trp_001" , "ord_001" , "ap_001" , "ap_002" , "al_001" , "FN_001" ]}'
+peer chaincode invoke \
+    -C $CHANNEL_NAME \
+    -n $CHAINCODE_NAME \
+    -o $CORE_ORDERER_ADDRESS \
+    --tls true --cafile $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+    --peerAddresses $CORE_PEER0_ORG1_ADDRESS \
+    --tlsRootCertFiles $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+    --peerAddresses $CORE_PEER0_ORG2_ADDRESS \
+    --tlsRootCertFiles $CORE_PEER_ORG2_TLS_ROOTCERT_FILE \
+    -c '{"function":"createTransport","Args":["trp_003" , "ord_002" , "ap_001" , "ap_002" , "al_001" , "FN_001" ]}'
+
+peer chaincode invoke \
+    -C $CHANNEL_NAME \
+    -n $CHAINCODE_NAME \
+    -o $CORE_ORDERER_ADDRESS \
+    --tls true --cafile $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+    --peerAddresses $CORE_PEER0_ORG1_ADDRESS \
+    --tlsRootCertFiles $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+    --peerAddresses $CORE_PEER0_ORG2_ADDRESS \
+    --tlsRootCertFiles $CORE_PEER_ORG2_TLS_ROOTCERT_FILE \
+    -c '{"function":"createTransport","Args":["trp_004" , "ord_002" , "ap_002" , "ap_003" , "al_002" , "FN_002" ]}'  
+
+peer chaincode invoke \
+    -C $CHANNEL_NAME \
+    -n $CHAINCODE_NAME \
+    -o $CORE_ORDERER_ADDRESS \
+    --tls true --cafile $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+    --peerAddresses $CORE_PEER0_ORG1_ADDRESS \
+    --tlsRootCertFiles $CORE_PEER_ORG1_TLS_ROOTCERT_FILE \
+    --peerAddresses $CORE_PEER0_ORG2_ADDRESS \
+    --tlsRootCertFiles $CORE_PEER_ORG2_TLS_ROOTCERT_FILE \
+    -c '{"function":"createTransport","Args":["trp_005" , "ord_002" , "ap_003" , "ap_004" , "al_003" , "FN_003" ]}'        
 
 # peer chaincode invoke \
 #     -C $CHANNEL_NAME \
